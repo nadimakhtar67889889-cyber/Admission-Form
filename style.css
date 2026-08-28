@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background: #f3eee7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292622;
+}
+
+.form-card{
+    width: 100%;
+    max-width: 650px;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e6ded4;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgb(60, 45, 30, .80);
+}
+
+.form-title{
+    margin-bottom: 25px;
+}
+
+.form-title span{
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a2674d;
+}
+
+.form-title h1{
+    margin: 7px 0;
+    font-size: 28px;
+}
+
+.form-title p{
+    color: #8a837c;
+    font-size: 14px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field{
+    margin-bottom: 17px;
+}
+
+.field label{
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #ddd5cc;
+    border-radius: 10px;
+    background: #faf8f5;
+    outline: none;
+    font: inherit;
+    font-size: 13px;
+}
+
+input:focus, select:focus, textarea:focus{
+    border-color: #a2674d;
+    background: #fff;
+}
+
+textarea{
+    height: 85px;
+    resize: none;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 3px 0 20px;
+    color: #77716b;
+    font-size: 12px;
+}
+
+.check input{
+    width: auto;
+    accent-color: #8f5741;
+}
+
+button{
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 10px;
+    background: #8f5741;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background: #70412f;
+}
+
+@media(max-width:550px){
+    body{
+        padding: 15px;
+    }
+
+    .form-card{
+        padding: 23px 18px;
+        border-radius: 17px;
+    }
+
+    .row{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-title h1{
+        font-size: 24px;
+    }
+}
